@@ -3,11 +3,12 @@ const app = express();
 const morgan = require("morgan");
 const rateLimit = require("express-rate-limit");
 const routes = require("./router");
+const cors = require("cors");
 
 app.use(express.json());
 
 app.use(morgan("dev"));
-
+app.use(cors());
 const limiter = rateLimit({
 	max: 100,
 	windowMs: 60 * 60 * 1000,
