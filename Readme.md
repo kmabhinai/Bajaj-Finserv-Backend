@@ -26,11 +26,15 @@ Start the server
   npm start
 ```
 
-## Test
+## Deployment Link
 
 ```bash
-https://documenter.getpostman.com/view/24310853/2sAXjF8uy2
+  npm run deploy
 ```
+
+## Documentation
+
+[Documentation](https://documenter.getpostman.com/view/24310853/2sAXjF8uy2)
 
 ## Authors
 
