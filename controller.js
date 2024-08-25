@@ -9,11 +9,11 @@ exports.postReq = (req, res) => {
 		const alphabets = [];
 		let maxLower = "";
 		console.log(data);
-
+		let regex = /^[a-zA-Z]+$/;
 		data.forEach((item) => {
 			if (!isNaN(item)) {
 				numbers.push(item);
-			} else if (typeof item === "string") {
+			} else if (typeof item === "string" && regex.test(item)) {
 				alphabets.push(item);
 				if (item === item.toLowerCase() && (!maxLower || item > maxLower)) {
 					maxLower = item;
