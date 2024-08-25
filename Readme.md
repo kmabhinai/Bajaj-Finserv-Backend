@@ -29,7 +29,7 @@ Start the server
 ## Deployment Link
 
 ```bash
-  npm run deploy
+  https://bajaj-finserv-backend-production-9294.up.railway.app/
 ```
 
 ## Documentation

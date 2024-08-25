@@ -14,8 +14,11 @@ const limiter = rateLimit({
 	message: "Too many requests from this IP, please try again in an hour!",
 });
 app.use("/api", limiter);
-
 app.use("/bfhl", routes);
+
+app.use("/", (req, res) => {
+	res.send("Welcome to the API\n Please use /bfhl in post or get method");
+});
 
 const PORT = 3000;
 app.listen(PORT, () => {
