@@ -4,7 +4,9 @@ exports.getReq = (req, res) => {
 
 exports.postReq = (req, res) => {
 	try {
-		const data = req.body.data.data || [];
+		const data = req.body.data || [];
+		console.log(req);
+
 		const numbers = [];
 		const alphabets = [];
 		let maxLower = "";
