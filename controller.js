@@ -23,9 +23,9 @@ exports.postReq = (req, res) => {
 
 		res.json({
 			is_success: true,
-			user_id: "Kambhampati_Manjunadha_Abhinai_17112003",
-			email: "manjunadha.abhinai2021@vitstudent.ac.in",
-			roll_number: "21BCE2533",
+			user_id: "Iddamakanti_Venketswar_Reddy_03082003",
+			email: "ir7470@srmist.edu.in",
+			roll_number: "RA2111003011469",
 			numbers: numbers,
 			alphabets: alphabets,
 			highest_lowercase_alphabet: maxLower ? [maxLower] : [],
